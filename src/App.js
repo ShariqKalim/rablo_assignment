@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form1 from "./components/Form1";
+import Form2 from "./components/Form2";
+import Form3 from "./components/Form3";
+import Display from "./components/Display";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route exact path="/" Component={Form1}></Route>
+        <Route exact path="/Form2" Component={Form2}></Route>
+        <Route exact path="/Form3" Component={Form3}></Route>
+        <Route exact path="/Display" Component={Display}></Route>
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

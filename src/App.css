@@ -1,38 +1,106 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  background-color: rgb(232, 232, 232);
+}
+.Outer_Div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Inner_Div {
+  width: 40vw;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.207);
+}
+.first_text {
+  display: flex;
+  justify-content: space-between;
+}
+.second_text {
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  width: 280px;
+  height: 40px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.632);
+  border-radius: 5px;
+  text-align: center;
+}
+#long_text {
+  width: 590px;
+  height: 40px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.632);
+}
+.extra_input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: "poppins";
+}
+#select_course {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.599);
+}
+
+.terms {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+#Department {
+  height: 30px;
+  width: 220px;
+  border: 1px solid rgba(128, 128, 128, 0.632);
+}
+
+#submit {
+  float: right;
+  width: 220px;
+  margin: 20px;
+  line-height: 40px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  background-color: #0e86d4;
+  opacity: 0.7;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+.button_div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+h1 {
+  font-size: 25px;
+  font-family: "poppins";
+  font-weight: 500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#first_name,
+#last_name,
+#mother_name,
+#father_name,
+#uni_name {
+  color: rgba(255, 0, 0, 0.773);
+  font-family: "poppins";
+  font-size: 15px;
 }
