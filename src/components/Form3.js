@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Form3.css";
 import Progress3 from "./Progress3";
 
@@ -12,11 +12,13 @@ const Form3 = () => {
   const [uniName, setUniname] = useState("");
   const [dept, setDept] = useState(false);
   const [terms, setTerms] = useState(false);
-
+  const navigate = useNavigate();
   const handleEvent = (e) => {
     e.preventDefault();
+
     if (dept && terms) {
-      window.location.href = "http://localhost:3000/Display";
+      // window.location.href = "http://localhost:3000/Display";
+      navigate("/Display");
     } else {
       alert("please fill the form!");
     }

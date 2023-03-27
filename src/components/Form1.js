@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Progress1 from "./Progress1";
 
 const Form1 = () => {
@@ -9,11 +10,13 @@ const Form1 = () => {
   const [uniName, setUniname] = useState("");
   const [dept, setDept] = useState(false);
   const [terms, setTerms] = useState(false);
-
+  const navigate = useNavigate();
   const handleEvent = (e) => {
     e.preventDefault();
+
     if (dept && terms) {
-      window.location.href = "http://localhost:3000/Form2";
+      // window.location.href = "http://localhost:3000/Form2";
+      navigate("/Form2");
     } else {
       alert("please fill the form!");
     }
