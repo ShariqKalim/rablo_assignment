@@ -11,9 +11,9 @@ const App = () => {
     <>
       <Routes>
         <Route exact path="/" Component={Form1}></Route>
-        <Route exact path="/Form2" Component={Form2}></Route>
-        <Route exact path="/Form3" Component={Form3}></Route>
-        <Route exact path="/Display" Component={Display}></Route>
+        <Route path="/Form2" Component={Form2}></Route>
+        <Route path="/Form3" Component={Form3}></Route>
+        <Route path="/Display" Component={Display}></Route>
       </Routes>
     </>
   );
